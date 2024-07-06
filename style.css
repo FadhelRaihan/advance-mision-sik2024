@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+#kiri {
+    width: 50%;
+    height: 100vh;
+    background-color: #005555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+#illustrasi {
+    width: 70%;
+}
+
+#kanan {
+    width: 50%;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+#logo2 {
+    display: none;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 10px 0px #3A35411A;
+    border-radius: 16px;
+    padding: 48px;
+}
+
+#login-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+#login-text h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1D2433;
+    line-height: 0px;
+}
+
+#login-text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1D2433;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+}
+
+#login-form-email,
+#login-form-password {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+}
+
+#login-form-email label,
+#login-form-password label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4A505C;
+    line-height: 19.6px;
+    letter-spacing: 0.2px;
+}
+
+#login-form-email input,
+#login-form-password input {
+    width: 378px;
+    height: 32px;
+    border-radius: 6px;
+    padding: 12px;
+    border: 1px solid #3A3541;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4A505C;
+}
+
+#login-choice {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 28px;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    color: #005555;
+}
+
+#login-choice p a {
+    text-decoration: none;
+    color: #005555;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#login-button button {      
+    width: 405px;   
+    height: auto;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    background-color: #005555;  
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    box-shadow: 0px 2px 10px 0px #3A35411A;
+}
+
+#login-atau {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+#login-atau p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4A505C;
+    line-height: 19.6px;
+    letter-spacing: 0.2px;
+}
+
+#login-sosmed {
+    width: 404px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #3A35413B
+}
+
+#login-sosmed p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4A505C;
+    line-height: 19.6px;
+    letter-spacing: 0.2px;
+}
+
+footer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #3A35413B;
+    position: absolute;
+    margin-top: 55%;
+}
+
+@media screen and (max-width: 768px) {
+    #kiri {
+        display: none;
+    }
+
+    #kanan {
+        width: 100%;
+        height: 100vh;
+    }
+
+    #logo2 {
+        margin-top: -70px;
+        display: block;
+        width: 50%;
+    }
+
+    #login {
+        margin-top: 40px;
+        padding: 24px;
+    }
+    
+    #login-text h3 {
+        font-size: 24px;
+    }
+    
+    #login-text p {
+        font-size: 14px;
+    }
+    
+    #login-form-email label,
+    #login-form-password label {
+        font-size: 12px;
+    }
+    
+    #login-form-email input,
+    #login-form-password input {
+        width: 272px;
+        font-size: 14px;
+    }
+    
+    #login-choice {
+        width: 300px;
+        font-size: 12px;
+    }
+    
+    #login-choice p a {
+        font-size: 12px;
+    }
+    
+    #login-button button {      
+        width: 300px;   
+    }
+    
+    #login-sosmed {
+        width: 300px;
+    }
+    
+    #login-sosmed p {
+        font-size: 12px;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid #3A35413B;
+        position: absolute;
+        margin-top: 168%;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
