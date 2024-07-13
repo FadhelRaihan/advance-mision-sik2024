@@ -121,6 +121,10 @@ main {
     margin-bottom: 0;
 }
 
+#main-left-input {
+    display: none;
+}
+
 #main-left-list {
     display: flex;
     justify-content: space-between;
@@ -414,4 +418,94 @@ footer p {
     font-size: 12px;
     font-weight: 500;
     color: #6C717A;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    nav {
+        border-bottom: 1px solid #E1E6EF;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    #logo-search-input {
+        display: none;
+    }
+
+    #logo-search img {
+        width: 103px;
+        height: 28px;
+    }
+
+    #profile-star1 {
+        display: none;
+    }
+
+    #profile-button button {
+        display: none;
+    }
+
+    #profile-bell {
+        display: block;
+    }
+
+    #profile-name {
+        gap: 8px;
+    }
+
+    #profile-name p {
+        display: none;
+    }
+
+    #profile-star2 {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        gap: 60px;
+    }
+
+    #main-left-input {
+        display: block;
+        position: absolute;
+        margin-top: 24px;
+        width: ;
+    }
+
+    #main-left-list {
+        position: absolute;
+    }
+
+    #main-left-title {
+        position: absolute;
+        margin-top: 700px;
+    }
+
+    #main-card {
+        position: absolute;
+        margin-top: 700px;
+    }
+
+
+
+
+
+    #main-right-recent {
+        position: absolute;
+        margin-top: 1000px;
+    }
+
+    footer {
+        position: absolute;
+        margin-top: 1000px;
+    }
 }
