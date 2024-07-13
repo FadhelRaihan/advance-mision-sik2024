@@ -430,7 +430,7 @@ body {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     #nav-1 {
         display: none;
     }
