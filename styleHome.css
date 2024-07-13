@@ -2,10 +2,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 /* NAVBAR */
-nav {
+#nav-1 {
     display: flex;
     justify-content: space-between;
     padding-left: 56px;
@@ -94,7 +95,7 @@ nav {
 }
 
 /* MAIN */
-main {
+#main-1 {
     display: flex;
     justify-content: space-between;
     padding-left: 56px;
@@ -406,7 +407,7 @@ main {
 }
 
 /* FOOTER */
-footer {
+#footer-1 {
     border-top: 1px solid #E1E6EF;
     margin-top: 28px;
     text-align: center;
@@ -414,98 +415,131 @@ footer {
     padding-bottom: 16px;
 }
 
-footer p {
+#footer-1 p {
     font-size: 12px;
     font-weight: 500;
     color: #6C717A;
 }
 
+#nav-2 {
+    display: none;
+}
+
+#main-2 {
+    display: none;
+}
+
 /* RESPONSIVE */
-@media screen and (max-width: 768px) {
-    nav {
-        border-bottom: 1px solid #E1E6EF;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
-
-    #logo-search-input {
+@media screen and (max-width: 576px) {
+    #nav-1 {
         display: none;
     }
 
-    #logo-search img {
-        width: 103px;
-        height: 28px;
-    }
-
-    #profile-star1 {
+    #main-1 {
         display: none;
     }
 
-    #profile-button button {
-        display: none;
-    }
-
-    #profile-bell {
-        display: block;
-    }
-
-    #profile-name {
-        gap: 8px;
-    }
-
-    #profile-name p {
-        display: none;
-    }
-
-    #profile-star2 {
-        display: none;
-    }
-
-    main {
+    /* NAVBAR */
+    #nav-2 {
         display: flex;
         flex-direction: column;
+        gap: 24px;
+    }
+
+    #nav2-atas {
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        gap: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #E1E6EF;
     }
 
-    #main-left-input {
-        display: block;
-        position: absolute;
-        margin-top: 24px;
-        width: ;
+    #nav2-logo-search img {
+        width: 102px;
+        height: 28px;
+    } 
+
+    #nav2-profile {
+        display: flex;
+        flex-direction: row;  
+        align-items: center;
+        gap: 14px;
     }
 
-    #main-left-list {
-        position: absolute;
+    #nav2-profile-bell {
+        color: #005555;
     }
 
-    #main-left-title {
-        position: absolute;
-        margin-top: 700px;
+    #nav2-profile img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
     }
 
-    #main-card {
-        position: absolute;
-        margin-top: 700px;
+    #nav2-bawah {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 9px;
     }
 
-
-
-
-
-    #main-right-recent {
+    #nav2-bawah-search i {
         position: absolute;
-        margin-top: 1000px;
+        top: 99.5px;
+        left: 38px;
+        color: #6C717A;
     }
 
-    footer {
-        position: absolute;
-        margin-top: 1000px;
+    #nav2-input {
+        width: 338.5px;
+        height: 42px;
+        border-radius: 8px;
+        border: 1px solid #E0E0E0;
+        background-color: transparent;
+        font-size: 12px;
+        color: #6C717A;
+        padding-left: 48px;
+        padding-right: 16px;
+    }
+
+    #nav2-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #nav2-list ul {
+        display: flex;
+        gap: 8px;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    #nav2-list ul li {
+        list-style: none;
+    }
+    
+    #nav2-list ul li button {
+        width: max-content;
+        padding: 8px;
+        border-radius: 16px;
+        border: 1px solid #E0E0E0;
+        background-color: #F8F9FC;
+        font-size: 10px;
+        color: #222325;
+    }
+    
+    #nav2-list-button {
+        width: max-content;
+        border: none;
+        background-color: transparent;
+        font-size: 10px;
+        font-weight: 500;
+        color: #005555;
     }
 }

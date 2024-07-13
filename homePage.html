@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="nav-1">
         <div id="logo-search">
             <img src="/asset/Logo2.svg" alt="Logo">
             <div id="logo-search-input">
@@ -31,11 +31,10 @@
         </div>
     </nav>
 
-    <main>
+    <main id="main-1">
         <!-- LEFT -->
         <div id="main-left">
             <h4 id="main-left-title">Semua Bacaan</h4>
-            <input id="main-left-input" type="text" placeholder="Cari Bacaan">
             <div id="main-left-list">
                 <ul>
                     <li><button>Teknologi</button></li>
@@ -268,14 +267,113 @@
                         <button>Lihat Profile</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>
 
-    <footer>
+    <!-- RESPONSIVE -->
+    <!-- NAV -->
+    <nav id="nav-2">
+        <div id="nav2-atas">
+            <div id="nav2-logo-search">
+                <img src="/asset/Logo2.svg" alt="Logo">
+            </div>
+            <div id="nav2-profile">
+                <i class="fa-solid fa-bell fa-lg" id="nav2-profile-bell"></i>
+                <img src="/asset/profile.png" alt="profile">
+            </div>
+        </div>
+
+        <div id="nav2-bawah">
+            <div id="nav2-bawah-search">
+                <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+                <input id="nav2-input" type="text" placeholder="Cari Bacaan">
+            </div>
+            <div id="nav2-list">
+                <ul>
+                    <li><button>Teknologi</button></li>
+                    <li><button>Media</button></li>
+                    <li><button>Pengembangan Diri</button></li>
+                    <li><button>Desain</button></li>
+                    <li><button>Budaya</button></li>
+                    <li><button>Dunia</button></li>
+                    <li><button id="nav2-list-button">Lihat Semua Topik</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main id="main-2">
+        <div id="main2-bacaanpop">
+            <h4 id="main2-bacaanpop-title">Bacaan Populer</h4>
+
+            <!-- CARD 1 -->
+            <div id="bacaanpop-card">
+                <div id="bacaanpop-list-card">
+                    <div id="bacaanpop-list-card-date">
+                        <p id="bacaanpop-card-number">#1</p>
+                        <p id="bacaanpop-card-date">27 Feb 2023</p>
+                    </div>
+                    <p id="bacaanpop-list-card-title">Mendekati AI yang Mampu Belajar Sendiri: Pengembangan Algoritma...
+                    </p>
+                    <div id="bacaanpop-list-card-profile">
+                        <img src="/asset/photoCard/profile/profile7.png" alt="profile7">
+                        <p>Rochel Foose</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+        </div>
+
+        <div id="main2-semuabacaan">
+            <h4 id="main2-semuabacaan-title">Semua Bacaan</h4>
+            <!-- CARD 1 -->
+            <div id="main2-semuabacaan-card">
+                <div id="semuabacaan-card">
+                    <img src="/asset/photoCard/photo-card1.jpeg" alt="photo-card1">
+                    <div id="semuabacaan-card-content">
+                        <p id="semuabacaan-card-date">09-Jun-2023</p>
+                        <div id="semuabacaan-card-title">
+                            <div id="semuabacaan-card-title-text">
+                                <p>Internet of Things (IoT) dan Masa Depan Keterhubungan dalam Kehidupan Sehari-hari</p>
+                            </div>
+                            <div id="semuabacaan-card-title-profile">
+                                <img src="/asset/photoCard/profile/profile1.png" alt="profile1">
+                                <p>Kristin Watson</p>
+                            </div>
+                        </div>
+                        <div id="semuabacaan-card-category">
+                            <button>Media</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main2-rekomendasi">
+            <h4 id="main2-rekomendasi-title">Rekomendasi Penulis</h4>
+
+            <div id="main2-rekomendasi-list-recent">
+                <!-- CARD 1 -->
+                <div id="main2-rekomendasi-recent-card">
+                    <div id="main2-rekomendasi-recent-card-profile">
+                        <img src="/asset/photoCard/profile/profile10.png" alt="profile10" />
+                        <p>Aurelio</p>
+                    </div>
+                    <button>Lihat Profile</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer-1">
         <p>© 2023 PT. Median. All Rights Reserved</p>
     </footer>
+
 </body>
 
 </html>
