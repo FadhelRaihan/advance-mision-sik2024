@@ -508,7 +508,7 @@ body {
     }
 
     #nav2-list {
-        display: flex;
+        display: inline-block;
         flex-direction: row;
     }
 
