@@ -19,8 +19,14 @@ main {
     gap: 80px;
 }
 
+#logo {
+    width: 178px;
+    height: 40px;
+}
+
 #illustrasi {
-    width: 70%;
+    width: 552px;
+    height: 687px;
 }
 
 #kanan {
@@ -30,7 +36,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center
+    justify-content: space-between;
 }
 
 #logo2 {
@@ -47,6 +53,9 @@ main {
     box-shadow: 0px 2px 10px 0px #3A35411A;
     border-radius: 16px;
     padding: 48px;
+    margin-top: 180px;
+    width: 426px;
+    height: 565px;
 }
 
 #login-text {
@@ -176,13 +185,12 @@ main {
     letter-spacing: 0.2px;
 }
 
-footer {
-    width: 50%;
+#footer {
+    width: 100%;
     display: flex;
     justify-content: center;
     border-top: 1px solid #3A35413B;
-    position: absolute;
-    margin-top: 40%;
+    margin-top: 6%;
 }
 
 @media screen and (max-width: 768px) {
@@ -196,22 +204,31 @@ footer {
     }
 
     #logo2 {
-        margin-top: -20px;
+        margin-top: 100px;
         display: block;
-        width: 50%;
+        width: 146px;
+        height: 40px;
     }
 
     #login {
-        margin-top: 40px;
+        margin-top: 0px;
         padding: 24px;
+        width: 320px;
+        height: 426px;
+        gap: 10px;
     }
     
     #login-text h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     #login-text p {
-        font-size: 14px;
+        font-size: 11px;
+    }
+
+    #login-form-email,
+    #login-form-password {
+        width: 272px;
     }
     
     #login-form-email label,
@@ -221,41 +238,45 @@ footer {
     
     #login-form-email input,
     #login-form-password input {
-        width: 272px;
-        font-size: 14px;
+        width: 246px;
+        height: 18px;
+        font-size: 11px;
     }
     
     #login-choice {
-        width: 300px;
-        font-size: 12px;
+        width: 272px;
+        font-size: 10px;
     }
     
     #login-choice p a {
-        font-size: 12px;
+        font-size: 10px;
     }
     
     #login-button button {      
-        width: 300px;   
+        width: 272px;   
+    }
+
+    #login-atau p {
+        font-size: 11px;
     }
     
     #login-sosmed {
-        width: 300px;
+        width: 272px;
     }
     
     #login-sosmed p {
-        font-size: 12px;
+        font-size: 11px;
     }
 
-    footer {
+    #footer {
         width: 100%;
         display: flex;
         justify-content: center;
         border-top: 1px solid #3A35413B;
-        position: absolute;
-        margin-top: 170%;
+        margin-top: 0;
     }
 
-    footer p {
+    #footer p {
         font-size: 12px;
     }
 }
