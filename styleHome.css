@@ -87,7 +87,7 @@ nav {
 
 #profile-username {
     font-size: 14px;
-} 
+}
 
 #profile-star2 {
     color: #616161;
@@ -102,22 +102,23 @@ main {
     padding-top: 24px;
     padding-bottom: 24px;
     gap: 60px;
-    border: 1px solid;
 }
 
+/* LEFT */
 #main-left {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 19px;
     width: 901px;
-    border: 1px solid;
 }
 
-#main-left-title h4 {
+#main-left-title {
     font-size: 24px;
     font-weight: 700;
     color: #1D2433;
+    margin: 0;
+    margin-bottom: 0;
 }
 
 #main-left-list {
@@ -130,6 +131,8 @@ main {
     display: flex;
     gap: 8px;
     padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #main-left-list ul li {
@@ -154,63 +157,261 @@ main {
     color: #005555;
 }
 
-#main-left-card1 {
+/* CARD */
+#main-left-card {
     display: flex;
     width: 901px;
+    height: 153px;
     gap: 24px;
 }
 
-#main-left-card1 img {
+#main-left-card img {
     width: 225px;
     height: 150px;
+    border-radius: 5px;
 }
 
-#left-card1-content {
+#left-card-content {
     display: flex;
     flex-direction: column;
+    width: 652px;
+    height: 153px;
+    gap: 10px;
 }
 
-#left-card1-date p {
+#left-card-date {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     color: #4A505C;
 }
 
-#left-card1-title {
+#left-card-title {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 
-#left-card1-title-text p {
+#left-card-title-text p {
     font-size: 18px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #1D2433;
+}
+
+#left-card-title-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#left-card-title-profile img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#left-card-title-profile p {
+    font-size: 16px;
+    color: #4A505C;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#left-card-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#left-card-category button {
+    font-size: 12px;
+    border: 1px solid #3A35413B;
+    background-color: transparent;
+    border-radius: 24px;
+    padding: 8px;
+}
+
+#left-card-category i {
+    color: #4A505C;
+}
+
+/* RIGHT */
+#main-right {
+    width: 367px;
+    height: 763px;
+    padding: 16px;
+    gap: 24px;
+}
+
+/* BACAAN POPULER */
+#main-right-list {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+#list-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1D2433;
+    margin: 0;
+}
+
+/* CARD */
+#frame-card {
+    background-color: #FDF0CC;
+    box-shadow: 0px 2px 10px 0px #3A35411A;
+    padding: 16px;
+    border-radius: 16px;
+    width: 335px;
+    height: 125px;
+}
+
+#frame-card2 {
+    background-color: #E5EEEE;
+    box-shadow: 0px 2px 10px 0px #3A35411A;
+    padding: 16px;
+    border-radius: 16px;
+    width: 335px;
+    height: 125px;
+}
+
+#list-card {
+    gap: 8px;
+    width: 320px;
+    height: 114px;
+}
+
+#list-card-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+#card-number {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #4A505C;
+}
+
+#card-date {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4A505C;
+}
+
+#list-card-title {
+    font-size: 16px;
     font-weight: 600;
     color: #1D2433;
 }
 
-#left-card1-title-profile {
+#list-card-profile {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    gap: 8px;
 }
 
-#left-card1-title-profile img {
-    width: 24px;
-    height: 24px;
+#list-card-profile img {
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
+    margin: 0;
 }
 
-#left-card1-title-profile p {
-    font-size: 16px;
+#list-card-profile p {
+    font-size: 14px;
+    font-weight: 500;
     color: #4A505C;
+    margin: 0;
 }
 
-#left-card1-category {
+/* RECENT */
+#main-right-recent {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#recent-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1D2433;
+    margin-bottom: 0;
+}
+
+/* CARD */
+#list-recent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* CARD 1 */
+#recent-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#left-card1-category button {
-    font-size: 12px;
-    border: 1px solid #3A35413B;
+#recent-card-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+#recent-card-profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+#recent-card-profile p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1D2433;
+    margin: 0;
+}
+
+#recent-card button {
+    border: 1px solid #005555;
     border-radius: 24px;
-    padding: 8px;
+    background-color: transparent;
+    color: #005555;
+    font-size: 12px;
+    font-weight: 600;
+    width: 119px;
+    height: 32px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid #E1E6EF;
+    margin-top: 28px;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+footer p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6C717A;
 }
