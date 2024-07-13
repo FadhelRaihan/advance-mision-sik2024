@@ -511,7 +511,8 @@ body {
         display: flex;
         flex-direction: row;
         width: 385px;
-        overflow-x: hidden;
+        white-space: nowrap;
+        overflow-x: auto;
     }
 
     #nav2-list ul {
